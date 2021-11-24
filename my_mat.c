@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "my_mat.h"
 
+int mat[10][10];
+int min(int, int);
 
 void entermat(int mat[10][10]) {
     for (int i = 0; i < 10; i++) {
