@@ -7,7 +7,6 @@ int main(void){
     int mat[10][10];
     int i, j;
     while(dec != 'D'){
-//        dec = getchar();
         scanf("%c", &dec);
         switch (dec) {
             case 'A':
