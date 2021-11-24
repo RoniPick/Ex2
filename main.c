@@ -8,7 +8,7 @@ int i, j;
 int main(void){
     char dec = getchar(); //the decision of the user
     while(dec != 'D'){
-        scanf("%d", &dec);
+        scanf("%c", &dec);
         switch (dec) {
             case 'A':
                 entermat(mat);
