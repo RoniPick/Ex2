@@ -18,7 +18,7 @@ void floyd_warshall_algo(int mat[10][10]){
                 if(i==j)
                     mat[i][j]=0;
                 else
-                    mat[i][j] = min(mat[i][j], mat[i][k] + mat[k][j]);
+                    mat[i][j] = min(mat[i][j],mat[i][k] + mat[k][j]);
             }
         }
     }

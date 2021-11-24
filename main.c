@@ -11,6 +11,11 @@ int main(void){
         scanf("%c", &dec);
         switch (dec) {
             case 'A':
+                for(int i=0; i<10; i++){
+                    for(int j=0; j<10; j++){
+                        mat[i][j]=0;
+                    }
+                }
                 entermat(mat);
                 break;
 
