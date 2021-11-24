@@ -14,16 +14,19 @@ void entermat(int mat[10][10]) {
     floyd_warshall_algo(mat);
 }
 
-void floyd_warshall_algo(int mat[10][10]){
-    for(int k=0; k<10; k++){
-        for(int i=0; i<10; i++){
-            for(int j=0; j<10; j++){
-                if(mat[i][k] != 0 && mat[k][j] != 0){ // if i and j are not neighbors but there is a path with vertical k
-                    if(mat[i][j] != 0) //if i and j not neighbors
-                        mat[i][j]= min(mat[i][j],mat[i][k] + mat[k][j]);
-                    else if(i!=j && mat[i][j] == 0) //if we are not on the main diagonal and there is no path between i and j
+void floyd_warshall_algo(int mat[10][10]) {
+    for (int k = 0; k < 10; k++) {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (mat[i][k] != 0 &&
+                    mat[k][j] != 0) { // if i and j are not neighbors but there is a path with vertical k
+                    if (mat[i][j] != 0) //if i and j not neighbors
+                        mat[i][j] = min(mat[i][j], mat[i][k] + mat[k][j]);
+                    else if (i != j &&
+                             mat[i][j] == 0) //if we are not on the main diagonal and there is no path between i and j
                         mat[i][j] = mat[i][k] + mat[k][j];
                 }
+            }
         }
     }
 }
