@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-//declarations of variables
-int mat[10][10];
-int i, j;
 
 int main(void){
     char dec;
+    int mat[10][10];
+    int i, j;
     while(dec != 'D'){
         dec = getchar(); //the decision of the user
         scanf("%c", &dec);
