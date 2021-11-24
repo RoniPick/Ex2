@@ -15,7 +15,10 @@ void floyd_warshall_algo(int mat[10][10]){
     for(int k=0; k<10; k++){
         for(int i=0; i<10; i++){
             for(int j=0; j<10; j++){
-                mat[i][j] = min(mat[i][j], mat[i][k] + mat[k][j]);
+                if(i==j)
+                    mat[i][j]=0;
+                else
+                    mat[i][j] = min(mat[i][j], mat[i][k] + mat[k][j]);
             }
         }
     }
