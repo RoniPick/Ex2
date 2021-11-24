@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-// test
 
 void entermat(int mat[10][10]) {
     for (int i = 0; i < 10; i++) {

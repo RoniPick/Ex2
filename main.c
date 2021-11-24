@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-//declarations
+//declarations of variables
 int mat[10][10];
 int i, j;
 
@@ -26,7 +26,7 @@ int main(void){
             case 'C':
                 scanf("%d%d", &i, &j);
                 if(shortestPath(mat, i, j)>0){
-                    printf(" %d", mat[i][j]);
+                    printf("%d", mat[i][j]);
                     printf("\n");
                 }
                 else{
