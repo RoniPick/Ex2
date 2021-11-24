@@ -12,6 +12,7 @@ int main(void){
         switch (dec) {
             case 'A':
                 entermat(mat);
+                break;
 
             case 'B':
                 scanf("%d%d", &i, &j);
@@ -21,6 +22,7 @@ int main(void){
                 else{
                     printf("False\n");
                 }
+                break;
 
 
             case 'C':
@@ -32,6 +34,7 @@ int main(void){
                 else{
                     printf("-1\n");
                 }
+                break;
         }
     }
     return 0;
