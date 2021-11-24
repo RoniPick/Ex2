@@ -5,7 +5,7 @@
 void entermat(int mat[10][10]) {
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
-            scanf( "%d", &mat[i][j]);
+            scanf( "%d", mat[i][j]);
         }
     }
     floyd_warshall_algo(mat);
