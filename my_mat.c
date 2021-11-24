@@ -45,7 +45,7 @@ int pathExists(int mat[10][10], int i, int j){
 
 int shortestPath(int mat[10][10], int i, int j){
     if(mat[i][j]>0)
-        return mat[i][j];
+        return mat[i][j]; //if there is a path - returning the length
     else
         return 0;
 }

@@ -5,7 +5,9 @@
  */
 void entermat(int mat[10][10]);
 
-
+/*
+  this function using the Floyd Warshall algorithm
+ */
 void floyd_warshall_algo(int mat[10][10]);
 
 /*
