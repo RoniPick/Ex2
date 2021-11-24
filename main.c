@@ -6,8 +6,8 @@ int mat[10][10];
 int i, j;
 
 int main(void){
-    char dec = getchar(); //the decision of the user
     while(dec != 'D'){
+        char dec = getchar(); //the decision of the user
         scanf("%c", &dec);
         switch (dec) {
             case 'A':

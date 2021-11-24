@@ -45,6 +45,6 @@ int shortestPath(int mat[10][10], int i, int j){
     if(mat[i][j]>0)
         return mat[i][j];
     else
-        return -1;
+        return 0;
 }
 
