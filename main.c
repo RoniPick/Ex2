@@ -3,11 +3,11 @@
 
 
 int main(void){
-    char dec;
+    char dec;//the decision of the user
     int mat[10][10];
     int i, j;
     while(dec != 'D'){
-        dec = getchar(); //the decision of the user
+//        dec = getchar();
         scanf("%c", &dec);
         switch (dec) {
             case 'A':
